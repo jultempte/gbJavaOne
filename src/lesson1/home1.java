@@ -5,7 +5,7 @@ package lesson1;
 
 
 
-public class Home1 {
+public class home1 {
     public static void main(String[] args) {
 
         System.out.println("Task 1: Написать метод вычисляющий выражение a * (b + (c / d)) и возвращающий результат с плавающей\n" +
