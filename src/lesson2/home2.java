@@ -16,6 +16,10 @@ public class home2 {
 
         int [] ultimateArray = {-1, 8, 2, 0, 11, -10};
         searchUltimateInArray(ultimateArray);
+
+        int [][] squareArray = new int [5][5];
+        fillSquareArray(squareArray);
+
         /**
          5 * Создать квадратный целочисленный массив
          (количество строк и столбцов одинаковое), заполнить его диагональные
@@ -93,6 +97,21 @@ public class home2 {
         System.out.println("minValue: " + minValue);
     }
 
-
+    /**
+     5 * Создать квадратный целочисленный массив
+     (количество строк и столбцов одинаковое), заполнить его диагональные
+     элементы единицами, используя цикл(ы);
+     **/
+    public static int[][] fillSquareArray(int [][] inputArray){
+        int j = 0;
+        int k = inputArray.length;
+        for (int i = 0; i < inputArray.length; i++){
+            inputArray[i][j] = 1;
+            inputArray[i][k] = 1;
+            j ++;
+            k --;
+        }
+        return inputArray;
+    }
 }
 
